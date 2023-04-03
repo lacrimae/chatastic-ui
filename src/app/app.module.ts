@@ -1,8 +1,11 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { RegistrationComponent } from './login/registration/registration.component';
+import {AppComponent} from './app.component';
+import {RegistrationComponent} from './login/registration/registration.component';
+import {FormsModule} from "@angular/forms";
+import {LoginService} from "./service/LoginService";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -10,9 +13,12 @@ import { RegistrationComponent } from './login/registration/registration.compone
     RegistrationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

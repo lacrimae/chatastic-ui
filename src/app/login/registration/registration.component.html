@@ -1,1 +1,19 @@
-<p>registration works!</p>
+<h1>Create a new account</h1>
+<form>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="email" required><br>
+
+  <label for="nickname">Nickname:</label>
+  <input type="text" id="nickname" name="nickname" [(ngModel)]="nickname" required><br>
+
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" required><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="password" required><br>
+
+  <button type="submit" (click)="register()">Create Account</button>
+</form>

@@ -1,27 +1,36 @@
-# ChatasticFe
+# Chatastic UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+**_Chatactic UI_** is a user interface microservice for the **_Chatastic_** web application, which is a real-time chat application. It
+provides a modern and intuitive user interface that makes it easy for users to interact with the **_Chatastic_** platform.
 
-## Development server
+## Contributing Policy
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+We welcome contributions to this project and appreciate your help in making it better! To ensure that the process is as
+smooth and efficient as possible, please follow the guidelines below.
 
-## Code scaffolding
+### Pull Requests
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. All pull requests should be pushed to the `developer` branch.
+2. Code changes should be thoroughly tested with appropriate test cases.
+3. Before submitting a pull request, make sure your code follows our coding standards and guidelines.
+4. Clearly describe the purpose of your pull request, and provide a detailed explanation of the changes you have made.
+5. Wait for approval from the code owner before merging your changes into the `master` branch.
 
-## Build
+### Code Review Process
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+All pull requests will be reviewed by the code owner. The code owner will provide feedback on your changes and request
+any necessary modifications.
 
-## Running unit tests
+Once your code has been reviewed and approved, the code owner will merge it into the `master` branch.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Code Coverage
 
-## Running end-to-end tests
+All code changes should be accompanied by appropriate test cases to ensure that they function correctly. We expect a
+minimum code coverage of **80%** for all new code.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Conclusion
 
-## Further help
+We appreciate your contributions to our project, and we look forward to your pull requests. If you have any questions or
+concerns, please do not hesitate to contact us.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Thank you for contributing to our project!

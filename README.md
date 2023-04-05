@@ -1,7 +1,30 @@
 # Chatastic UI
 
-**_Chatactic UI_** is a user interface microservice for the **_Chatastic_** web application, which is a real-time chat application. It
-provides a modern and intuitive user interface that makes it easy for users to interact with the **_Chatastic_** platform.
+**_Chatactic UI_** is a user interface microservice for the **_Chatastic_** web application, which is a real-time chat
+application. It provides a modern and intuitive user interface that makes it easy for users to interact with the **
+_Chatastic_**platform.
+
+## Run Locally
+
+To run Chatactic UI microservice on your local machine, follow these steps:
+
+1. Ensure that Node.js and npm are installed on your system. If you haven't installed them yet, you can follow the
+   instructions on the [Node.js download page](https://nodejs.org/en/download) to install them.
+2. Clone the repository and navigate to the project directory:
+    ```bash
+    git clone https://github.com/lacrimae/chatastic-fe.git
+    cd chatastic-fe
+    ```
+3. Install the required dependencies by running the following command in your terminal:
+    ```bash
+    npm install
+    ```
+4. Start the application by running the following command:
+    ```bash
+    npm start
+    ```
+
+This will launch the Chatactic UI microservice in your browser at http://localhost:4200.
 
 ## Contributing Policy
 

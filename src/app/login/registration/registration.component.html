@@ -1,19 +1,33 @@
-<h1>Create a new account</h1>
-<form>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" [(ngModel)]="email" required><br>
+<div class="registration-page">
+  <div class="card">
+    <h1>Create a new account</h1>
+    <form>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" class="form-control" required>
+      </div>
 
-  <label for="nickname">Nickname:</label>
-  <input type="text" id="nickname" name="nickname" [(ngModel)]="nickname" required><br>
+      <div class="form-group">
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" [(ngModel)]="nickname" class="form-control" required>
+      </div>
 
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" required><br>
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" class="form-control" required>
+      </div>
 
-  <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required><br>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" class="form-control" required>
+      </div>
 
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" [(ngModel)]="password" required><br>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control" required>
+      </div>
 
-  <button type="submit" (click)="register()">Create Account</button>
-</form>
+      <button type="submit" (click)="register()" class="btn btn-primary">Create Account</button>
+    </form>
+  </div>
+</div>

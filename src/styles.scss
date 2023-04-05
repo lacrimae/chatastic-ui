@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+label {
+  font-weight: 500;
+  color: #555;
+}
+
+.card {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+button {
+  font-weight: 500;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+
+button:hover {
+  background-color: #3367d6;
+  cursor: pointer;
+}
+

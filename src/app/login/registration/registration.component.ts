@@ -4,7 +4,7 @@ import {LoginService, UserRequest} from "../../service/LoginService";
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.css']
+  styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent {
   email: string = '';
@@ -30,7 +30,6 @@ export class RegistrationComponent {
       .subscribe(resp => {
         console.log(resp);
       });
-  //   todo: fix CORS policy on the BE.
   }
 }
 

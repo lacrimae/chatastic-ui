@@ -1,33 +1,56 @@
-<div class="registration-page">
-  <div class="card">
-    <h1>Create a new account</h1>
-    <form>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" [(ngModel)]="email" class="form-control" required>
-      </div>
-
-      <div class="form-group">
-        <label for="nickname">Nickname:</label>
-        <input type="text" id="nickname" name="nickname" [(ngModel)]="nickname" class="form-control" required>
-      </div>
-
-      <div class="form-group">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" class="form-control" required>
-      </div>
-
-      <div class="form-group">
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" class="form-control" required>
-      </div>
-
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control" required>
-      </div>
-
-      <button type="submit" (click)="register()" class="btn btn-primary">Create Account</button>
+<div class="mat-mdc-snack-bar-container container">
+  <mat-card>
+    <h2>Create a new account</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="register()">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+        <mat-error *ngIf="hasError('email') || isTouchedOrDirty('email')">
+          <div *ngIf="hasSpecificError('email', 'required')">
+            Email is required.
+          </div>
+          <div *ngIf="hasSpecificError('email', 'email')">
+            Please enter a valid email address.
+          </div>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" formControlName="firstName">
+        <mat-error *ngIf="hasError('firstName') || isTouchedOrDirty('firstName')">
+          <div *ngIf="hasSpecificError('firstName', 'required')">
+            First Name is required.
+          </div>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Nickname</mat-label>
+        <input matInput type="text" formControlName="nickname">
+        <mat-error *ngIf="hasError('nickname') || isTouchedOrDirty('nickname')">
+          <div *ngIf="hasSpecificError('nickname', 'required')">
+            Nickname is required.
+          </div>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" formControlName="lastName">
+        <mat-error *ngIf="hasError('lastName') || isTouchedOrDirty('lastName')">
+          <div *ngIf="hasSpecificError('lastName', 'required')">
+            Last Name is required.
+          </div>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+        <mat-error *ngIf="hasError('password') || isTouchedOrDirty('password')">
+          <div *ngIf="hasSpecificError('password', 'required')">
+            Password is required.
+          </div>
+        </mat-error>
+      </mat-form-field>
+      <button type="submit" class="btn btn-primary" [disabled]="!registrationForm.valid">Create Account</button>
     </form>
-  </div>
+  </mat-card>
 </div>

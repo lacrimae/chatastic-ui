@@ -1,0 +1,25 @@
+footer {
+  background-color: var(--main-color);
+  color: var(--main-font-color);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+}

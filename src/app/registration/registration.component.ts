@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {LoginService, UserRequest} from "../../service/LoginService";
+import {LoginService, UserRequest} from "../service/LoginService";
 import {FormControl, FormGroup, ValidationErrors, Validators} from "@angular/forms";
 
 @Component({

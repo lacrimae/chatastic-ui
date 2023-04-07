@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
+:root {
+  --main-color: #EFEBE5;
+  --main-font-color: #602020;
+}
+
+body, html {
   font-family: 'Roboto', sans-serif;
-  color: #333;
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {

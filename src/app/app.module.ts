@@ -19,6 +19,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {FooterComponent} from './footer/footer.component';
 import {HomepageComponent} from './homepage/homepage.component';
 import {RouterModule, Routes} from "@angular/router";
+import { ChatComponent } from './chat/chat.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomepageComponent}
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     LoginComponent,
     HeaderComponent,
     FooterComponent,
-    HomepageComponent
+    HomepageComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

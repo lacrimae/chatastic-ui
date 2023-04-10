@@ -10,15 +10,16 @@ export class ChatComponent implements OnInit {
   messages: string[] = [];
   content: string = '';
 
-  constructor(private chatService: ChatService) {}
+  constructor(private chatService: ChatService) {
+  }
 
   sendMessage() {
     this.chatService.sendMessage(this.content);
     this.messages.push(this.content);
     this.content = '';
     // if (this.content && this.chatService.stompClient.connected) {
-      // this.chatService.stompClient.send("/app/chat", {}, JSON.stringify({ message: this.content }));
-      // this.content = "";
+    // this.chatService.stompClient.send("/app/chat", {}, JSON.stringify({ message: this.content }));
+    // this.content = "";
     // }
   }
 
